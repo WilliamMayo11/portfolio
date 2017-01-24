@@ -1,0 +1,385 @@
+html {
+  background-image: url('./images/mayo2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px 30px;
+  background-attachment: fixed;
+  height: 100%;
+  background-color: gray;
+}
+h1, h3 {
+  font-family: 'Londrina Outline', cursive;
+  color: black;
+}
+p {
+  font-family: 'Special Elite', cursive;
+  font-size: 22px;
+}
+.about {
+  color: white;
+  width: 600px;
+}
+.nav {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  z-index: 2;
+/*  display: flex;
+  flex-direction: row;
+  justify-content: space-between;*/
+  background-color: gray;
+}
+.grime {
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+  opacity: .4;
+}
+.grime2 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: .4;
+}
+.grime3 {
+  height: 10%;
+  width: 100%;
+  position: absolute;
+  opacity: .4;
+  z-index: 3;
+}
+
+
+/*header*/
+/*dropdown menu attribution http://www.w3schools.com/howto/howto_js_dropdown.asp*/
+
+.name {
+  color: white;
+}
+.info-button {
+  float: left;
+  position: fixed;
+  background-color: gray;
+/*  animation-name: fade;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;*/
+  color: black;
+  padding: 0px;
+  padding-left: 24px;
+  padding-top: 5px;
+  font-size: 28px;
+  height: 50px;
+  margin-top: -14px;
+  border: none;
+  position: fixed;
+  font-family: 'Special Elite', cursive;
+  z-index: 4;
+}
+.dropdown-menu {
+    position: relative;
+    display: inline-block;
+    z-index: 4;
+    font-size: 24px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: gray;
+    min-width: 360px;
+    z-index: 4;
+}
+.dropdown-content a {
+    color: black;
+    padding: 13px 24px;
+    text-decoration: none;
+    display: block;
+    z-index: 4;
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  z-index: 4;
+}
+.dropdown-menu:hover .dropdown-content {
+    display: block;
+    position: fixed;
+    z-index: 4;
+    margin-top: 36px;
+}
+
+/*logos*/
+
+.logo-container {
+  right: 0%;
+  position: fixed;
+  float: right;
+  z-index: 4;
+}
+.logo1 {
+  margin-top: -17px;
+  height: 45px;
+  width: 45px;
+}
+.logo2 {
+  margin-top: -17px;
+  height: 50px;
+  width: 50px;
+}
+.logo3 {
+  margin-top: -17px;
+  height: 45px;
+  width: 45px;
+}
+
+/*project images*/
+
+#mj {
+  height: 400px;
+}
+
+/*main display*/
+
+.display-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 30vh;
+  width: 50vw;
+  position: absolute;
+  margin: auto;
+}
+.display-title1 {
+  color: white;
+  font-size: 40px;
+  font-family: 'Londrina Shadow', cursive;
+}
+.display-title2 {
+  color: white;
+  font-size: 60px;
+  font-family: 'Londrina Shadow', cursive;
+}
+.display-title3 {
+  color: white;
+  font-size: 40px;
+}
+@media (min-width: 1040px) {
+  .display-title1 {
+    font-size: 60px;
+  }
+  .display-title2 {
+    font-size: 90px;
+  }
+  .display-title3 {
+    font-size: 60px;
+  }
+}
+.about {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.display-box2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  top: 130%;
+  height: 280px;
+  width: 100%;
+  position: absolute;
+  background-image: url("./images/mayo1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-attachment: fixed;
+  height: 100%;
+}
+.display-box3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  top: 230%;
+  height: 280px;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-attachment: fixed;
+  height: 100%;
+}
+.nice-day-container {
+  height: 100px;
+  position: relative;
+  margin-top: -300px;
+}
+.nice-day {
+  color: white;
+  font-size: 80px;
+  font-family: 'Londrina Shadow', cursive;
+  position: relative;
+  bottom: 0px;
+}
+@media (max-width: 1056px) {
+  html {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100%;
+  }
+  #mj {
+    height: 200px;
+    max-width: 100%;
+  }
+}
+
+/*modal 1 */
+/*attribution - http://www.w3schools.com/howto/howto_css_modals.asp*/
+
+.projects-title {
+  text-align: center;
+  font-size: 60px;
+}
+.modal1 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+.modal-content1 {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+.close1 {
+    color: black;
+    float: right;
+    font-family: 'Special Elite', cursive;
+    font-size: 50px;
+    font-weight: bold;
+}
+.close1:hover,
+.close1:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.game-display {
+  height: 40%;
+  text-align: center;
+}
+
+/*modal 2 */
+
+.modal2 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content2 {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+.close2 {
+    color: black;
+    float: right;
+    font-family: 'Special Elite', cursive;
+    font-size: 50px;
+    font-weight: bold;
+}
+.close2:hover,
+.close2:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*modal 3*/
+
+.modal3 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content3 {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+.close3 {
+    color: black;
+    float: right;
+    font-family: 'Special Elite', cursive;
+    font-size: 50px;
+    font-weight: bold;
+}
+.close3:hover,
+.close3:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+a {
+  font-family: 'Special Elite', cursive;
+}
+
+/*animations*/
+
+/*info button pulse*/
+@keyframes fade {
+    0%   {color: black;}
+    50%  {color: white;}
+    100% {color: black;}
+}
+
+/*modal fade-ins*/
+@-webkit-keyframes fade-in {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+@keyframes fade-in {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+/*Disable background scroll on modal*/
+
+body.modal-open {
+    overflow: hidden;
+}
+body.modal-closed {
+  overflow: auto;
+}
