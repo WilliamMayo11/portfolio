@@ -8,9 +8,11 @@ console.log('js linked');
 let modal1 = $('.modal1');
 let link1 = $('.modal-link1');
 let span1 = $('.close1');
+let dropdownContent = $('.dropdown-content');
 
 let display1 = function() {
   console.log('clicked');
+  dropdownContent.mouseleave(resetDropDisplay);
   modal2.css("display", "none");
   modal3.css("display", "none");
   modal1.css("display", "block");
@@ -18,6 +20,8 @@ let display1 = function() {
   modal1.css("animation", "fade-in 1s");
   $("body").removeClass('modal-closed');
   $("body").addClass('modal-open');
+  dropdownContent.css("display", "none");
+  dropdownContent.style.removeProperty("display");
   // stopPulse();
   console.log(modal1);
 }
@@ -44,6 +48,7 @@ let infoButton = $('.info-button');
 
 let display2 = function() {
   console.log('clicked');
+  dropdownContent.mouseleave(resetDropDisplay);
   modal1.css("display", "none");
   modal3.css("display", "none");
   modal2.css("display", "block");
@@ -52,6 +57,7 @@ let display2 = function() {
   // stopPulse();
   $("body").removeClass('modal-closed');
   $("body").addClass('modal-open');
+  dropdownContent.css("display", "none");
   console.log(modal2);
 }
 
@@ -70,6 +76,7 @@ let span3 = $('.close3');
 
 let display3 = function() {
   console.log('clicked');
+  dropdownContent.mouseleave(resetDropDisplay);
   modal1.css("display", "none");
   modal2.css("display", "none");
   modal3.css("display", "block");
@@ -78,6 +85,7 @@ let display3 = function() {
   // stopPulse();
   $("body").removeClass('modal-closed');
   $("body").addClass('modal-open');
+  dropdownContent.css("display", "none");
   console.log(modal3);
 }
 
@@ -88,9 +96,9 @@ let hide3 = function() {
   $("body").addClass('modal-closed');
 }
 
-// let stopPulse = function() {
-//   infoButton.css("animation-iteration-count", "0");
-// }
+let resetDropDisplay = function() {
+  dropdownContent.css("display", "");
+}
 
 link1.click(display1);
 span1.click(hide1);
